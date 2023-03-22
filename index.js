@@ -14,9 +14,9 @@ setInterval(() => {
       timeout: 0,
     });
     await page.focus("#email");
-    await page.keyboard.type("");
+    await page.keyboard.type("roshan31992@gmail.com");
     await page.focus("#password");
-    await page.keyboard.type("");
+    await page.keyboard.type("Rosh@n03111992");
     await page.keyboard.down("Enter");
     await page.waitForNavigation({ waitUntil: "networkidle2" });
     const linkHandlers = await page.waitForXPath(
