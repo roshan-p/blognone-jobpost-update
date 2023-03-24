@@ -30,6 +30,7 @@ setInterval(() => {
       await page.keyboard.type("1");
       await page.keyboard.down("Enter");
     });
+    await page.goBack();
     browser.close();
   })();
 }, 5000);
